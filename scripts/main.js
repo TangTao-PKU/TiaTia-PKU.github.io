@@ -9,7 +9,7 @@
   const CANVASHEIGHT = 150
   const CANVASID = 'canvas'
 
-  let texts = ['LOOK UP AT THE STARRY SKY', 'YOU ARE MY MOONLIGHT','Li Qiu Qin','I LOVE YOU']
+  let texts = ['LOOK UP AT THE STARRY SKY','YOU ARE MY MOONLIGHT','Li Qiu Qin','I LOVE YOU']
 
   let canvas,
     ctx,
@@ -41,7 +41,7 @@
   }
 
   function particleText (imgData) {
-    // 点坐标获取
+    // 点坐标获�?
     var pxls = []
     for (var w = CANVASWIDTH; w > 0; w -= 3) {
       for (var h = 0; h < CANVASHEIGHT; h += 3) {
@@ -159,10 +159,10 @@
       let size = Math.random() * 1.2
       // 速度
       this.delta = 0.06
-      // 现在的位置
+      // 现在的位�?
       this.x = 0
       this.y = 0
-      // 上次的位置
+      // 上�?�的位置
       this.px = Math.random() * canvas.width
       this.py = (canvas.height * 0.5) + ((Math.random() - 0.5) * spread)
       // 记录点最初的位置
@@ -171,9 +171,9 @@
       // 点的大小
       this.size = size
       // this.origSize = size
-      // 是否用来显示字
+      // �?否用来显示字
       this.inText = false
-      // 透明度相关
+      // 透明度相�?
       this.opacity = 0
       this.fadeInRate = 0.005
       this.fadeOutRate = 0.03
